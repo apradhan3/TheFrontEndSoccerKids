@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url('images/hee.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+            
+        }
+        header{
+            
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            top: 35px;
+            font-size: 30px;
+            color: black;
+            animation-name: dropping;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes dropping {
+            0%{top: -500px;}
+            50%{top: 50px;}
+            100%{top: 35px;}
+        }
+
+        .container{
+            height: 450px;
+        }
+
+        .container :nth-child(n)
+        {
+            height: 70px;
+            width: 70px;
+            position: relative;
+            bottom: 100%;           
+        }
+
+        .drop1
+        {
+            animation-name: nfallen;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            
+        }
+
+        .drop2
+        {
+            animation-name: nfallen;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .drop3
+        {
+            animation-name: nfallen;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .drop4
+        {
+            animation-name: nfallen;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+           
+        }
+        .drop5
+        {
+            animation-name: nfallen;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+
+        .drop6
+        {
+            animation-name: nfallen;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+        }
+
+        .drop7
+        {
+            animation-name: nfallen;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .drop8
+        {
+            animation-name: nfallen;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .drop9
+        {
+            animation-name: nfallen;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        .drop10
+        {
+            animation-name: nfallen;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        .drop11
+        {
+            animation-name: nfallen;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            
+        }
+
+        .drop12
+        {
+            animation-name: nfallen;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+           
+        }
+        .drop13
+        {
+            animation-name: nfallen;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+           
+        }
+        .drop14
+        {
+            animation-name: nfallen;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+        .drop15
+        {
+            animation-name: nfallen;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            
+        }
+
+        .drop16
+        {
+            animation-name: nfallen;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+            
+        }
+        .drop17
+        {
+            animation-name: nfallen;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            
+        }
+        .drop18
+        {
+            animation-name: nfallen;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            
+        }
+
+        @keyframes nfallen
+        {
+            0%{top: -1000px;}
+            100%{top: 700px;}
+        }
+
+     
+
+        
+
+        @keyframes move1 {
+            0%{left: -1000px; opacity: 0;}
+            100%{left: 45%; opacity: 0.8; }
+        }
+
+        @keyframes move2 {
+            0%{right: -1000px; opacity: 0;}
+            100%{right: -45%; opacity: 0.8;}
+        }
+
+    
+
+        .kid{
+            height: 60px;
+            background-color: black;
+            position: relative;
+            top: 40px;
+            
+           
+        }
+
+
+        .button1 {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px rgb(15, 111, 167);
+            display: block;
+            margin: auto;
+            position: relative;
+            top: 50px;
+            transition-property: transform ;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .button1:hover {background-color: #3e8e41;
+            transform: rotateZ(90deg);
+        }
+
+        .button1:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            
+        }
+
+        .button2 {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: rgb(180, 48, 152);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px rgb(15, 111, 167);
+            display: block;
+            margin:auto;
+            position: relative;
+            top: 50px;
+            
+
+            /* Using Transition Property */
+            transition-property: transform ;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            
+        }
+
+
+        .button2:hover {background-color: #b213e2;
+            transform: rotateZ(180deg);
+        }
+
+        .button2:active {
+            background-color: #b213e2;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .btn{
+            text-decoration: none;  
+        }
+
+        @keyframes moves {
+            0%{transform: rotateY(360deg);}
+            100%{left: 0;}
+        }
+
+        .kid{
+
+            float: left;
+            height: 100px;
+            width: 70px;
+            position: relative;
+            top: 0px;
+            left: 20px;
+            animation-name: kidmoves;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+
+        @keyframes kidmoves {
+            0%{left: 10px;}
+            100%{left: 300px;}
+        }
+
+
+        @media(min-width: 1000px) and (max-width: 1190px)
+        {
+            @keyframes kidmoves {
+            0%{left: 10px;}
+            100%{left: 200px;}
+            }
+        }
+        @media(min-width: 812px) and (max-width: 1000px)
+        {
+            @keyframes kidmoves {
+            0%{left: 10px;}
+            100%{left: 100px;}
+            }
+        }
+
+        @media(min-width: 710px) and (max-width: 812px)
+        {
+            @keyframes kidmoves {
+            0%{left: 10px;}
+            100%{left: 50px;}
+            }
+        }
+
+        @media(min-width: 40px) and (max-width: 710px)
+        {
+            @keyframes kidmoves {
+            0%{left: 1px;}
+            100%{left: 10px;}
+            }
+        }
+
+        @media(min-width: 400px) and (max-width: 630px)
+        {
+            header{
+            
+            font-size: 25px;
+            color: black;
+            
+            }
+            .button1
+            {
+                margin-top: 150px;
+            }
+        }
+
+       
+      
+      
+
+        
+
+      
+
+    </style>
+</head>
+<body>
+    
+<div>
+    <div><img src="images/soccerboy.jpg" alt="ultimatekid" class="kid"></div>
+    <header>
+
+        <h1>Well Done! Champ :)</h1>
+    </header>
+    
+    
+</div>
+    <br>
+    <div >
+        <div class="clr">
+
+        </div>
+        <a href="#" class="btn"><button class="button1">Play Again!</button> </a>
+         <br>
+         <br>
+        <a href="#" class="btn"><button class="button2">Go Back!</button> </a>
+     </div>
+
+    
+  <div class="container">
+            <img src="images/soccer.png" alt="" class="drop1">
+            <img src="images/soccer.png" alt="" class="drop2">
+            <img src="images/soccer.png" alt="" class="drop3">
+            <img src="images/soccer.png" alt="" class="drop4">
+            <img src="images/soccer.png" alt="" class="drop5">
+            <img src="images/soccer.png" alt="" class="drop6">
+            <img src="images/soccer.png" alt="" class="drop7">
+            <img src="images/soccer.png" alt="" class="drop8">
+            <img src="images/soccer.png" alt="" class="drop9">
+            <img src="images/soccer.png" alt="" class="drop10">
+            <img src="images/soccer.png" alt="" class="drop11">
+            <img src="images/soccer.png" alt="" class="drop12">
+            <img src="images/soccer.png" alt="" class="drop13">
+            <img src="images/soccer.png" alt="" class="drop14">
+            <img src="images/soccer.png" alt="" class="drop15">
+            <img src="images/soccer.png" alt="" class="drop16">
+            <img src="images/soccer.png" alt="" class="drop17">
+            <img src="images/soccer.png" alt="" class="drop18">
+            
+    </div>
+
+
+    
+  </div>
+
+</body>
+</html>
