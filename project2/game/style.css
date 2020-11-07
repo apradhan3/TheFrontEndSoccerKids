@@ -1,0 +1,64 @@
+html {
+    background: lightblue;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  h3 a {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #444;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  h3 a:hover {
+    text-decoration: underline;
+  }
+  .button
+  {
+    height: 40px;
+    width: 60px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+  }
+
+  .loginform
+  {
+    border: none;
+    border-radius: 50px;
+    padding: 20px 0px 20px 200px;
+    box-shadow: 0 0 10px 5px coral;
+  }
+
+  .text
+  {
+    padding: 50px;
+  }
+
+  #mine
+  {
+    float: left;
+    padding-left: 50px;
+  }
+
+  #computer
+  {
+    float: left;
+    padding-left: 100px;
+  }
